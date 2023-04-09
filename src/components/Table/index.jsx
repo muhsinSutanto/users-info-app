@@ -27,7 +27,7 @@ export default function Table({ data }) {
                         <td className="px-6 py-4">{datum.address}</td>
                         <td className="px-6 py-4">{datum.job}</td>
                         <td className="px-6 py-4">{datum.dob}</td>
-                        <td className="px-6 py-4">{datum.phones.map((number) => number)} </td>
+                        <td className="px-6 py-4">{datum.phones[0]} </td>
                         <td className="px-6 py-4">
                            <Button
                               onClick={() => (showFam == idx ? setShowFam(null) : setShowFam(idx))}

@@ -31,11 +31,11 @@ const NewUser = () => {
       console.log(data);
       const user = transformInputToObject(data);
       console.log(user);
-      // await dispatch({
-      //    type: ACTION_TYPES.ADD_DATA,
-      //    payload: user,
-      // });
-      // await handleRedirect();
+      await dispatch({
+         type: ACTION_TYPES.ADD_DATA,
+         payload: user,
+      });
+      await handleRedirect();
    };
 
    const handleRedirect = () => {
